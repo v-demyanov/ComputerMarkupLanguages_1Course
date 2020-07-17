@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+mark {
+  background-color: black;
+  color: #fcdb00;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(243, 226, 152);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+video {
+  outline: none;
+}
+
+audio {
+  outline: none;
+}
+
+/* ---------- Header ---------- */
+.header {
+  padding: 20px;
+  background-color: #fcdb00;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header .menu {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.menu_item {
+  margin: 0 20px;
+}
+
+.menu_item a {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* ---------- Header ---------- */
+
+/* ---------- Multimedia ---------- */
+.multimedia {
+  background-color: white;
+}
+
+.clips {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.clips video {
+  margin: 20px;
+}
+
+.audio {
+  padding: 20px;
+  background-color: rgb(182, 182, 182);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.audio audio {
+  margin: 20px;
+}
+/* ---------- Multimedia ---------- */
+
+/* ---------- Navigation ---------- */
+.navigation {
+  padding: 20px;
+  background-color: #d83939;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.control input {
+  outline: none;
+  font-weight: bold;
+  color: black;
+  padding: 10px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.control,
+.output {
+  margin: 20px;
+}
+
+.output {
+  background: white;
+  width: 60%;
+  padding: 20px;
+}
+
+/* ---------- Navigation ---------- */
+
+/* ---------- Canvas ---------- */
+.canvas {
+  background-color: #b93131;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+canvas {
+  background-color: white;
+}
+
+/* ---------- Navigation ---------- */
+
+/* ---------- Form ---------- */
+.formHTML5 {
+  padding: 20px;
+  background-color: #0e0d0d;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  background: rgb(200, 200, 200);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.form fieldset legend {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(46, 46, 46);
+}
+
+.form input,
+.form label {
+  display: block;
+  width: 100%;
+}
+
+.form input {
+  border: none;
+  line-height: 40px;
+  font-size: 25px;
+  color: rgb(59, 59, 59);
+  border-radius: 5px;
+  cursor:pointer;
+}
+
+.form label {
+  margin: 2px 0 10px 5px;
+  color: rgb(68, 68, 68);
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.form fieldset {
+  
+  border: none;
+}
+
+/* ---------- Form ---------- */
+
+/* ---------- Footer ---------- */
+.footer {
+  padding: 50px 20px;
+  background-color: black;
+  display: flex;
+}
+
+.credits {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 500;
+  width: 160px;
+  line-height: 1.5;
+  margin: 0 auto;
+  text-align: center;
+}
+/* ---------- Footer ---------- */
+
+
+figure {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  width: 100px;
+  margin: 0;
+  color: rgb(78, 78, 78);
+}

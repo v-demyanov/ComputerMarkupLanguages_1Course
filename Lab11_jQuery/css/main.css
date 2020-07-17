@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.5px;
+  margin: 15% 15%;
+  background-color: #34495e;
+  color: #341f97;
+}
+
+div {
+  background-color: #95a5a6;
+}
+
+span {
+  color: #f6e58d;
+  cursor: pointer;
+}
+
+/*-----------------lab_8------------------*/
+.lab8 {
+  margin-bottom: 40px;
+  padding: 60px;
+}
+
+.lab8 img {
+  width: 300px;
+  display: block;
+  max-width: 100%;
+}
+
+.lab8_ex3,
+.lab8_ex4,
+.lab8_ex5 {
+  display: flex;
+  justify-content: center;
+}
+
+#lab8_ex6 {
+  border: solid green;
+  border-width: 0px;
+}
+
+/*-----------------lab_9------------------*/
+.lab9 {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#lab6 .lab9_ex1 {
+  padding: 30px;
+  background-color: white;
+  position: relative;
+  height: calc(100vh / 2);
+}
+
+.lab9_ex1 #imgEx1 {
+  width: 200px;
+  top: 20%;
+  left: 70%;
+  position: absolute;
+}
+
+.lab9_ex1 textarea {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.lab9_ex1 #imgEx2 {
+  width: 200px;
+  left: 10%;
+  position: absolute;
+}
+
+.lab9_ex1 #imgEx3 {
+  width: 100px;
+  left: 1%;
+  top: 80%;
+  position: absolute;
+}
+
+.lab9 #place {
+  height: calc(100vh / 2);
+  display: flex;
+  margin-top: 40px;
+}
+
+#place .buttons {
+  background-color: #16a085;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.buttons span {
+  padding-left: 20px;
+  font-size: 25px;
+  color: #0a3d62;
+  font-weight: bold;
+}
+
+.drawButton {
+  padding: 5px;
+  margin-top: 20px;
+}
+.clearButton {
+  padding: 5px;
+  margin-top: 20px;
+}
+
+#colors {
+  padding: 5px;
+}
+
+.lab9 #canv {
+  width: 70%;
+  background-image: url(../img/canvas.jpg);
+}

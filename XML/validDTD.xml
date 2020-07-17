@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="css/main.css"?>
+<!DOCTYPE LIST
+ [
+    <!ELEMENT LIST (UNIVERSITY)+>
+    <!ELEMENT UNIVERSITY (NAME, SPECIALIZATION, RATE, PLAN, CITY)>
+    <!ELEMENT NAME (#PCDATA)>
+    <!ELEMENT SPECIALIZATION (#PCDATA)>
+    <!ELEMENT RATE (#PCDATA)>
+    <!ELEMENT PLAN (#PCDATA)>
+    <!ELEMENT CITY (#PCDATA)>
+ ]
+>
+<LIST>
+    <UNIVERSITY>
+        <NAME>БГТУ</NAME>
+        <SPECIALIZATION>ПОИТ</SPECIALIZATION>
+        <RATE>320 баллов</RATE>
+        <PLAN>300 человека</PLAN>
+        <CITY>Минск</CITY>
+    </UNIVERSITY>
+    <UNIVERSITY>
+        <NAME>БГУ</NAME>
+        <SPECIALIZATION>ПОИТ</SPECIALIZATION>
+        <RATE>305 баллов</RATE>
+        <PLAN>150 человека</PLAN>
+        <CITY>Минск</CITY>
+    </UNIVERSITY>
+    <UNIVERSITY>
+        <NAME>БГУиР</NAME>
+        <SPECIALIZATION>ПОИТ</SPECIALIZATION>
+        <RATE>370 баллов</RATE>
+        <PLAN>350 человека</PLAN>
+        <CITY>Минск</CITY>
+    </UNIVERSITY>
+    <UNIVERSITY>
+        <NAME>БНТУ</NAME>
+        <SPECIALIZATION>ПОИТ</SPECIALIZATION>
+        <RATE>300 баллов</RATE>
+        <PLAN>250 человека</PLAN>
+        <CITY>Минск</CITY>
+    </UNIVERSITY>
+</LIST>

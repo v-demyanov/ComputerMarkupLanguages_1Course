@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function square() {
+        let parrentElement = document.getElementById("lab2_ex3");
+        let table,
+          row,
+          div,
+          step = 0.3;
+        let a = +prompt("a: ");
+        let b = +prompt("b: ");
+        table = document.createElement("table");
+
+        let begin = 0;
+        let i;
+        do {
+          row = document.createElement("tr");
+          i = 0;
+          do {
+            if (begin == 0) {
+              div = document.createElement("th");
+              div.style.backgroundColor = "gray";
+              if (i == 0) {
+                div.append(document.createTextNode("Радиус"));
+              } else if (i == 1) {
+                div.append(document.createTextNode("Площадь круга"));
+              } else {
+                div.append(document.createTextNode("Длина окружности"));
+              }
+            } else {
+              div = document.createElement("td");
+              div.style.backgroundColor = "green";
+              if (i == 0) {
+                div.append(document.createTextNode(a));
+              } else if (i == 1) {
+                div.append(document.createTextNode(Math.PI * Math.pow(a, 2)));
+              } else {
+                div.append(document.createTextNode(2 * Math.PI * a));
+              }
+            }
+            div.style.padding = "5px";
+            row.append(div);
+            i++;
+          } while (i < 3);
+          table.append(row);
+          if (begin != 0) a += step;
+          begin++;
+        } while (a < b);
+        parrentElement.append(table);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="lab2_ex3">
+      <h4>Задание 3</h4>
+      <input
+        type="button"
+        value="Площадь кругу и длина окружноти"
+        onclick="square()"
+      />
+    </div>
+  </body>
+</html>

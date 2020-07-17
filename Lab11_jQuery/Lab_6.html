@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- библиотека jQuery  -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <!-- jQuery UI -->
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  </head>
+  <body id="lab6">
+
+    <div class="lab8 margin_bottom">
+      <div class="lab8_ex1">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. At corrupti
+          eaque aut
+          <span id="ColorSpan">aliquid</span>
+          debitis eos <span id="changeSize">voluptate</span> quam repellendus
+          obcaecati repudiandae. Perferendis nobis magnam quos tenetur! Id amet
+          nisi omnis provident?
+        </p>
+      </div>
+      <div class="lab8_ex3" id="lab8_ex3"></div>
+      <div class="lab8_ex4">
+        <p id="lab8_ex4">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
+          neque provident velit quibusdam reiciendis et est praesentium aut
+          debitis, maiores, repellat quaerat aliquam quos corporis, dolorem
+          cupiditate expedita? Sequi, laudantium.
+        </p>
+      </div>
+      <div class="lab8_ex5" id="lab8_ex5"></div>
+      <div class="lab8_ex6">
+        <p id="lab8_ex6">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+          quibusdam. Aliquam eligendi non doloremque atque! Alias tenetur nobis
+          totam, inventore assumenda consequatur impedit amet distinctio vero
+          cumque tempora beatae suscipit.
+        </p>
+      </div>
+    </div>
+    
+    <div class="lab9 margin_bottom">
+      <div class="lab9_ex1" id="lab9_ex1">
+        <img id="imgEx1" src="img/spaceship3.png" alt="">
+        <img id="imgEx2" src="img/spaceship.png" alt="">
+        <img id="imgEx3" src="img/netflix.png" alt="">
+        <div id="dtextarea">
+          <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+        </div>
+        
+      </div>
+      <div id="place">
+        <div class="buttons">
+          <form name="diagramButtons">
+            <label><p><input type="radio" name="r" value="1"><span>y = x<sup>2</sup></span></p></label>
+            <label><p><input type="radio" name="r" value="2"><span>y = x<sup>3</sup></span></p></label>
+            <label><p><input type="radio" name="r" value="3"><span>y = sin(x)</span></p></label>
+            <label><p><input type="radio" name="r" value="4"><span>y = cos(x)</span></p></label>
+            <input type="button" class="drawButton" value="Нарисовать" onclick="draw()" />
+            <input type="button" class="clearButton" value="Стереть" onclick="clearCanvas()" />
+            <select name="colors" id="colors">
+              <option value="red">red</option>
+              <option value="blue">blue</option>
+              <option value="green">green</option>
+              <option value="orange">orange</option>
+            </select>
+          </form>
+        </div>
+        <canvas id="canv"></canvas>
+      </div>
+    </div>
+
+    <!-- <script src="js/jquery.js"></script> -->
+    <script src="js/lab_8.js"></script>
+    <script src="js/lab_9.js"></script>
+  </body>
+  </body>
+</html>

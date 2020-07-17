@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body id="lab6">
+    <div class="ex1">
+      <p>
+        <input type="button" value="Открыть окно №1" onclick="openWin1()" />
+        <input type="button" value="Открыть окно №2" onclick="openWin2()" />
+      </p>
+      <p>
+        <input type="button" value="Закрыть окно №1" onclick="closeWin1()" />
+        <input type="button" value="Закрыть окно №2" onclick="closeWin2()" />
+      </p>
+      <p>
+        <input type="button" value="Вывести текст в окно" onclick="output()" />
+      </p>
+    </div>
+
+    <div class="ex2">
+      <table id="table">
+        <tr>
+          <td>Свойство</td>
+          <td>Значение</td>
+        </tr>
+        <tr>
+          <td>Информация о браузере пользователя</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Версия браузера</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Название браузера</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Кодовое название браузера</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>ОС, которую использует пользователь</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Включена ли поддержка Java в браузере</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Ширина и высота экрана</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Глубина цвета</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>URL, которые были посещены в данном окне браузера</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>URL текущего документа</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Путь к загруженному документу</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Имя домена загруженного документа</td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="lab7_ex1">
+      <form name="student">
+        <fieldset>
+          <textarea name="faculty" id="faculty" cols="30" rows="10"> </textarea>
+          <label>
+            <p>Фамилия</p>
+            <input type="text" name="surname" />
+          </label>
+          <label>
+            <p>Имя</p>
+            <input type="text" name="firstname" />
+          </label>
+          Специальность
+          <select name="specialty" id="specialty">
+            <option value="1">ПОИТ</option>
+            <option value="2">ИСИТ</option>
+            <option value="3">ПОИБМСМ</option>
+            <option value="4">ДЭВИ</option>
+          </select>
+          <p>Курс</p>
+          <p>
+            <input type="radio" name="r" value="1" />1
+            <input type="radio" name="r" value="2" />2
+            <input type="radio" name="r" value="3" />3
+            <input type="radio" name="r" value="4" />4
+          </p>
+          <p>Предметы</p>
+          <p class="checkbox">
+            <input type="checkbox" name="c" value="ОИТ" />ОИТ
+            <input type="checkbox" name="c" value="ОАП" />ОАП
+            <input type="checkbox" name="c" value="История" />История
+            <input type="checkbox" name="c" value="Физика" />Физика
+            <input type="checkbox" name="c" value="Математика" />Математика
+          </p>
+          <p class="submit">
+            <input type="submit" value="submit" />
+            <input type="reset" value="reset" />
+          </p>
+          <input type="button" value="Напечатать" onclick="outputForm()" />
+        </fieldset>
+      </form>
+      <div class="output" id="output"></div>
+    </div>
+
+    <div class="lab7_ex2 margin_bottom">
+      <form action="" name="secStudent">
+        <fieldset>
+          <select name="sub" id="sub"> </select>
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="lab8 margin_bottom">
+      <div class="lab8_ex1">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. At corrupti
+          eaque aut
+          <span id="ColorSpan">aliquid</span>
+          debitis eos <span id="changeSize">voluptate</span> quam repellendus
+          obcaecati repudiandae. Perferendis nobis magnam quos tenetur! Id amet
+          nisi omnis provident?
+        </p>
+      </div>
+      <div class="lab8_ex3" id="lab8_ex3"></div>
+      <div class="lab8_ex4">
+        <p id="lab8_ex4">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
+          neque provident velit quibusdam reiciendis et est praesentium aut
+          debitis, maiores, repellat quaerat aliquam quos corporis, dolorem
+          cupiditate expedita? Sequi, laudantium.
+        </p>
+      </div>
+      <div class="lab8_ex5" id="lab8_ex5"></div>
+      <div class="lab8_ex6">
+        <p id="lab8_ex6">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+          quibusdam. Aliquam eligendi non doloremque atque! Alias tenetur nobis
+          totam, inventore assumenda consequatur impedit amet distinctio vero
+          cumque tempora beatae suscipit.
+        </p>
+      </div>
+    </div>
+    <div class="lab9 margin_bottom">
+      <div class="lab9_ex1" id="lab9_ex1">
+        <img id="imgEx1" src="img/spaceship3.png" alt="">
+        <img id="imgEx2" src="img/spaceship.png" alt="">
+        <img id="imgEx3" src="img/netflix.png" alt="">
+        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+      </div>
+      <div id="place">
+        <div class="buttons">
+          <form name="diagramButtons">
+            <label><p><input type="radio" name="r" value="1"><span>y = x<sup>2</sup></span></p></label>
+            <label><p><input type="radio" name="r" value="2"><span>y = x<sup>3</sup></span></p></label>
+            <label><p><input type="radio" name="r" value="3"><span>y = sin(x)</span></p></label>
+            <label><p><input type="radio" name="r" value="4"><span>y = cos(x)</span></p></label>
+            <input type="button" class="drawButton" value="Нарисовать" onclick="draw()" />
+            <input type="button" class="clearButton" value="Стереть" onclick="clearCanvas()" />
+            <select name="colors" id="colors">
+              <option value="red">red</option>
+              <option value="blue">blue</option>
+              <option value="green">green</option>
+              <option value="orange">orange</option>
+            </select>
+          </form>
+        </div>
+        <canvas id="canv"></canvas>
+        <!-- <div class="diagram" id="diagram"></div> -->
+      </div>
+    </div>
+
+    <script src="js/lab_6.js"></script>
+    <script src="js/lab_8.js"></script>
+    <script src="js/lab_9.js"></script>
+  </body>
+  </body>
+</html>

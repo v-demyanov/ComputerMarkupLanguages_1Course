@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/lab5.css" />
+  </head>
+  <body>
+    <input
+      type="file"
+      onchange="processFiles(this.files)"
+      multiple
+      accept=".xml"
+    />
+    <div id="wrapper"></div>
+    <script>
+      function processFiles(files) {
+        var newDiv = document.createElement("div");
+        for (let i = 0; i < files.length; i++) {
+          var file = files[i];
+          var xml;
+          var reader = new FileReader();
+          reader.onload = function (event) {
+            xml = event.target.result;
+            if (window.DOMParser) {
+              var parser = new DOMParser();
+              var xmlDOC = parser.parseFromString(xml, "text/xml");
+            } else {
+              var xmlDOC = new ActiveXObject("Microsoft.XMLDOM");
+              xmlDOC.async = false;
+              xmlDOC.loadXML(xml);
+            }
+            var students = xmlDOC.getElementsByTagName("WRAPPER");
+            console.log(students);
+            for (let i = 0; i < students.length; i++) {
+              newDiv.innerHTML = students[i].innerHTML;
+            }
+          };
+          wrapper.append(newDiv);
+          reader.readAsText(file);
+        }
+      }
+    </script>
+  </body>
+</html>

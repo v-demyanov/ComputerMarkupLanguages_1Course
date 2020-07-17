@@ -1,0 +1,101 @@
+<div class="wrapper_ex1">
+      <svg class="ex1" width="650" height="700">
+        <defs>
+          <radialGradient
+            id="background_circle"
+            cx="50%"
+            cy="50%"
+            r="50%"
+            fx="50%"
+            fy="50%"
+          >
+            <stop offset="0%" style="stop-color: #ffffff; stop-opacity: 1;" />
+            <stop offset="100%" style="stop-color: #f8e3b9; stop-opacity: 1;" />
+          </radialGradient>
+        </defs>
+        <circle
+          cx="40%"
+          cy="50%"
+          r="200"
+          stroke="white"
+          stroke-width="0"
+          fill="url(#background_circle)"
+        />
+        <polygon
+          stroke="rgb(16, 10, 19)"
+          stroke-width="2"
+          points="170,565 200,510 510,480 450,565"
+          style="fill: rgb(65, 40, 75);"
+        />
+        <polygon
+          points="250,490 368,60 480,460"
+          stroke="#922033"
+          stroke-width="2"
+          style="fill: #e73654;"
+          fill-opacity="0.95"
+        />
+        <polygon
+          points="150,470 370,55 360,440"
+          stroke="#964e5a"
+          stroke-width="2"
+          style="fill: #e47487;"
+          fill-opacity="0.95"
+        />
+        <text
+          x="550"
+          y="60"
+          fill="white"
+          font-weight="bold"
+          transform="rotate(-90 620 50)"
+        >
+          SVG image
+        </text>
+      </svg>
+    </div>
+    <div class="wrapper_ex2">
+      <svg class="ex2" width="650" height="650">
+        <defs>
+          <path
+            id="cog"
+            d="M100 59.384v-18.768l-14.333-2.389c-0.582-1.771-1.291-3.483-2.119-5.127l8.443-11.82-13.271-13.271-11.799 8.428c-1.651-0.835-3.373-1.552-5.153-2.139l-2.383-14.298h-18.768l-2.383 14.298c-1.78 0.587-3.502 1.304-5.153 2.139l-11.8-8.428-13.271 13.271 8.443 11.82c-0.827 1.644-1.537 3.356-2.118 5.127l-14.333 2.389v18.768l14.367 2.395c0.582 1.755 1.29 3.452 2.113 5.081l-8.471 11.86 13.271 13.271 11.88-8.486c1.621 0.815 3.31 1.516 5.055 2.093l2.4 14.402h18.768l2.4-14.402c1.746-0.577 3.434-1.278 5.055-2.093l11.88 8.486 13.271-13.271-8.471-11.86c0.823-1.629 1.531-3.326 2.113-5.081l14.367-2.394zM50 62.5c-6.904 0-12.5-5.596-12.5-12.5 0-6.904 5.596-12.5 12.5-12.5 6.904 0 12.5 5.596 12.5 12.5 0 6.904-5.596 12.5-12.5 12.5z"
+          />
+        </defs>
+        <style>
+          .u-1 {
+            fill: aqua;
+            transform: scale(1);
+            stroke: chocolate;
+            stroke-width: 2;
+          }
+          .u-2 {
+            fill: brown;
+            transform: scale(1.3);
+            stroke: darkmagenta;
+            stroke-width: 2;
+          }
+          .u-3 {
+            fill: chocolate;
+            transform: scale(2);
+            stroke: darkgreen;
+            stroke-width: 2;
+          }
+          .u-4 {
+            fill: darkgreen;
+            transform: scale(1.5);
+            stroke: chocolate;
+            stroke-width: 2;
+          }
+          .u-5 {
+            fill: darkmagenta;
+            transform: scale(1.2);
+            stroke: chocolate;
+            stroke-width: 2;
+          }
+        </style>
+        <use xlink:href="#cog" class="u-1" x="45" y="45" />
+        <use xlink:href="#cog" class="u-2" x="355" y="45" />
+        <use xlink:href="#cog" class="u-3" x="100" y="100" />
+        <use xlink:href="#cog" class="u-4" x="35" y="290" />
+        <use xlink:href="#cog" class="u-5" x="405" y="405" />
+      </svg>
+    </div>

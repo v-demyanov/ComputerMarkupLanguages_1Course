@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/lab6.css" />
+  </head>
+  <body>
+    <div class="wrapper_lab7">
+      <svg class="l7_ex1" width="950" height="800">
+        <defs>
+          <path
+            id="c"
+            d="M100 59.384v-18.768l-14.333-2.389c-0.582-1.771-1.291-3.483-2.119-5.127l8.443-11.82-13.271-13.271-11.799 8.428c-1.651-0.835-3.373-1.552-5.153-2.139l-2.383-14.298h-18.768l-2.383 14.298c-1.78 0.587-3.502 1.304-5.153 2.139l-11.8-8.428-13.271 13.271 8.443 11.82c-0.827 1.644-1.537 3.356-2.118 5.127l-14.333 2.389v18.768l14.367 2.395c0.582 1.755 1.29 3.452 2.113 5.081l-8.471 11.86 13.271 13.271 11.88-8.486c1.621 0.815 3.31 1.516 5.055 2.093l2.4 14.402h18.768l2.4-14.402c1.746-0.577 3.434-1.278 5.055-2.093l11.88 8.486 13.271-13.271-8.471-11.86c0.823-1.629 1.531-3.326 2.113-5.081l14.367-2.394zM50 62.5c-6.904 0-12.5-5.596-12.5-12.5 0-6.904 5.596-12.5 12.5-12.5 6.904 0 12.5 5.596 12.5 12.5 0 6.904-5.596 12.5-12.5 12.5z"
+          />
+        </defs>
+        <circle cx="10%" cy="10%" r="50" fill="#cc3333">
+          <animate
+            repeatCount="3"
+            repeatDur="9s"
+            fill="freeze"
+            attributeName="cx"
+            from="10%"
+            to="50%"
+            dur="3s"
+            begin="click"
+            restart="whenNotActive"
+          />
+          <animate
+            repeatCount="3"
+            repeatDur="9s"
+            fill="freeze"
+            attributeName="fill"
+            from="#cc3333"
+            to="#993399"
+            dur="3s"
+            begin="click"
+            restart="whenNotActive"
+          />
+        </circle>
+        <circle
+          cx="10%"
+          cy="20%"
+          r="20"
+          fill="#381758"
+          stroke="#f0c1d5"
+          stroke-width="0"
+        >
+          <animate
+            fill="freeze"
+            attributeName="cx"
+            from="10%"
+            to="50%"
+            dur="3s"
+            begin="click"
+            restart="whenNotActive"
+          />
+          <animate
+            fill="freeze"
+            attributeName="cy"
+            from="20%"
+            to="30%"
+            dur="3s"
+            begin="click"
+            restart="whenNotActive"
+          />
+          <animate
+            fill="freeze"
+            attributeName="r"
+            from="20"
+            to="50"
+            dur="3s"
+            begin="click"
+            restart="whenNotActive"
+          />
+          <animate
+            fill="freeze"
+            attributeName="stroke-width"
+            from="0"
+            to="5"
+            dur="3s"
+            begin="click"
+            restart="whenNotActive"
+          />
+        </circle>
+        <use xlink:href="#c" fill="white" class="u" x="10%" y="65%" />
+        <animateTransform
+          xlink:href="#c"
+          attributeName="transform"
+          attributeType="XML"
+          type="rotate"
+          from="0,50,50"
+          to="45,50,50"
+          begin="another.end"
+          dur="500ms"
+          repeatCount="indefinite"
+          additive="sum"
+          fill="freeze"
+        />
+        <animateTransform
+          id="another"
+          xlink:href="#c"
+          attributeName="transform"
+          attributeType="XML"
+          type="scale"
+          from="1"
+          to="1.5"
+          dur="1s"
+          additive="sum"
+          fill="freeze"
+          begin="click"
+        />
+
+        <svg width="250" height="250" x="450" y="400">
+          <animate
+            xlink:href="#stat"
+            attributeName="stroke-dashoffset"
+            attributeType="XML"
+            from="722"
+            to="300"
+            dur="1s"
+            fill="freeze"
+            begin="mouseover"
+            restart="whenNotActive"
+          />
+          <animate
+            xlink:href="#stat"
+            attributeName="stroke-dashoffset"
+            attributeType="XML"
+            from="300"
+            to="700"
+            dur="1s"
+            fill="freeze"
+            begin="mouseout"
+            restart="whenNotActive"
+          />
+          <g stroke-width="20" transform="rotate(-90 125 125)">
+            <circle
+              fill="none"
+              r="115"
+              cx="125"
+              cy="125"
+              stroke="gray"
+              stroke-dasharray="100 0"
+            />
+            <circle
+              fill-opacity="0"
+              id="stat"
+              r="115"
+              cx="125"
+              cy="125"
+              stroke="white"
+              stroke-dasharray="722"
+              stroke-dashoffset="700"
+              transform="rotate(360, 125, 125)"
+            />
+          </g>
+        </svg>
+      </svg>
+    </div>
+
+    <div class="lab7_ex4_wrapper">
+      <svg class="lab7_ex4" width="800" height="600" viewBox="0 0 800 600">
+        <defs>
+          <path
+            id="ex4"
+            d="M100 59.384v-18.768l-14.333-2.389c-0.582-1.771-1.291-3.483-2.119-5.127l8.443-11.82-13.271-13.271-11.799 8.428c-1.651-0.835-3.373-1.552-5.153-2.139l-2.383-14.298h-18.768l-2.383 14.298c-1.78 0.587-3.502 1.304-5.153 2.139l-11.8-8.428-13.271 13.271 8.443 11.82c-0.827 1.644-1.537 3.356-2.118 5.127l-14.333 2.389v18.768l14.367 2.395c0.582 1.755 1.29 3.452 2.113 5.081l-8.471 11.86 13.271 13.271 11.88-8.486c1.621 0.815 3.31 1.516 5.055 2.093l2.4 14.402h18.768l2.4-14.402c1.746-0.577 3.434-1.278 5.055-2.093l11.88 8.486 13.271-13.271-8.471-11.86c0.823-1.629 1.531-3.326 2.113-5.081l14.367-2.394zM50 62.5c-6.904 0-12.5-5.596-12.5-12.5 0-6.904 5.596-12.5 12.5-12.5 6.904 0 12.5 5.596 12.5 12.5 0 6.904-5.596 12.5-12.5 12.5z"
+          />
+        </defs>
+        <use xlink:href="#ex4" fill="white" x="350" y="250" />
+        <use xlink:href="#ex4" fill="purple" x="650" y="450" />
+      </svg>
+    </div>
+
+    <div class="lab8_wrapper">
+      <svg class="lab8" width="950" height="800">
+        <style>
+          .p1 {
+            text-transform: uppercase;
+            font-size: 50px;
+            fill: rgb(255, 255, 255);
+          }
+          .p2 {
+            text-transform: uppercase;
+            font-size: 50px;
+            fill: none;
+            stroke: white;
+            stroke-width: 2px;
+            font-weight: bold;
+            writing-mode: horizontal-tb;
+          }
+          .p1_t1 {
+            font-weight: bold;
+            fill: rgb(255, 241, 42);
+          }
+          .p1_t2 {
+            text-decoration: underline;
+          }
+          .p2_t2 {
+            writing-mode: vertical-rl;
+            font-style: italic;
+          }
+          .textpath {
+            font-size: 60px;
+            text-transform: uppercase;
+            font-weight: bold;
+            fill: white;
+          }
+        </style>
+        <text x="150" y="600" class="p1">
+          Lorem
+          <tspan class="p1_t1" dx="0" dy="40">ipsum</tspan>
+          <tspan class="p1_t2" dx="0" dy="-40">dolor</tspan>
+        </text>
+        <text x="550" y="200" class="p2">
+          <tspan class="p2_t1">ipsum</tspan>
+          <tspan class="p2_t2">dolor</tspan>
+        </text>
+
+        <defs>
+          <path
+            id="textpath"
+            fill="none"
+            stroke="red"
+            stroke-width="30"
+            d="M243.2, 382.4c-74.8,   
+            0-135.5-60.7-135.5-135.5s60.7-135.5,135.5-135.5s135.5, 60.7, 135.5,
+            135.5 S318, 382.4, 243.2, 382.4z"
+          />
+        </defs>
+
+        <use xlink:href="#textpath" />
+        <text class="textpath" x="10" y="100" dy="-5">
+          <textPath xlink:href="#textpath">
+            Lorem ipsum dolor sit amet consectetur.
+          </textPath>
+        </text>
+      </svg>
+    </div>
+
+    <div class="lab8_svg_img">
+      <svg
+        class="l8_svg"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        width="800"
+        height="800"
+        viewBox="0 0 500 500"
+        style="enable-background: new 0 0 500 500;"
+        xml:space="preserve"
+      >
+        <g id="&#x421;&#x43B;&#x43E;&#x439;_2">
+          <rect style="fill: #28175e;" width="500" height="500" />
+        </g>
+        <g id="&#x421;&#x43B;&#x43E;&#x439;_1;">
+          <g id="beginW">
+            <rect
+              x="289.118"
+              y="156.969"
+              style="fill: none;"
+              width="5.629"
+              height="12.867"
+            />
+            <rect
+              x="209.502"
+              y="156.969"
+              style="fill: none;"
+              width="5.629"
+              height="12.867"
+            />
+            <linearGradient
+              id="SVGID_1_"
+              gradientUnits="userSpaceOnUse"
+              x1="269.4833"
+              y1="105.5006"
+              x2="413.0268"
+              y2="105.5006"
+            >
+              <stop offset="0" style="stop-color: #fbff72;" />
+              <stop offset="1" style="stop-color: #ffffff; stop-opacity: 0;" />
+            </linearGradient>
+            <polygon
+              id="light1"
+              style="fill: url(#SVGID_1_);"
+              points="413.027,141.334 413.027,69.667 277.055,95.045 277.055,114.052 		"
+            />
+
+            <!-- Анимация освещения -->
+            <animate
+              xlink:href="#light1"
+              attributeName="opacity"
+              dur="2s"
+              values="0.2;0.8;0.5;1;0.1"
+              repeatCount="indefinite"
+              restart="whenNotActive"
+            />
+            <animate
+              xlink:href="#light2"
+              attributeName="opacity"
+              dur="2s"
+              values="0.2;0.8;0.5;1;0.1"
+              repeatCount="indefinite"
+              restart="whenNotActive"
+            />
+            <animate
+              id="w_f"
+              xlink:href="#w1"
+              attributeName="fill"
+              dur="100ms"
+              from="#6b6363"
+              to="#fbff72"
+              begin="beginW.mouseover"
+              fill="freeze"
+              restart="whenNotActive"
+            />
+            <animate
+              id="w_s"
+              xlink:href="#w2"
+              attributeName="fill"
+              dur="100ms"
+              from="#6b6363"
+              to="#fbff72"
+              begin="w_f.end"
+              fill="freeze"
+              restart="whenNotActive"
+            />
+            <animate
+              xlink:href="#w3"
+              attributeName="fill"
+              dur="100ms"
+              from="#6b6363"
+              to="#fbff72"
+              begin="w_s.end"
+              fill="freeze"
+              restart="whenNotActive"
+            />
+            <animate
+              id="w_f_o"
+              xlink:href="#w1"
+              attributeName="fill"
+              dur="100ms"
+              from="#fbff72"
+              to="#6b6363"
+              begin="beginW.mouseout"
+              fill="freeze"
+              restart="whenNotActive"
+            />
+            <animate
+              id="w_s_os"
+              xlink:href="#w2"
+              attributeName="fill"
+              dur="100ms"
+              from="#fbff72"
+              to="#6b6363"
+              begin="w_f_o.end"
+              fill="freeze"
+              restart="whenNotActive"
+            />
+            <animate
+              xlink:href="#w3"
+              attributeName="fill"
+              dur="100ms"
+              from="#fbff72"
+              to="#6b6363"
+              begin="w_s_os.end"
+              fill="freeze"
+              restart="whenNotActive"
+            />
+            <!-- Анимация освещения -->
+
+            <linearGradient
+              id="SVGID_2_"
+              gradientUnits="userSpaceOnUse"
+              x1="12.8107"
+              y1="105.5005"
+              x2="156.3543"
+              y2="105.5005"
+              gradientTransform="matrix(-1 0 0 1 245.5101 0)"
+            >
+              <stop offset="0" style="stop-color: #fbff72;" />
+              <stop offset="1" style="stop-color: #ffffff; stop-opacity: 0;" />
+            </linearGradient>
+            <polygon
+              id="light2"
+              style="fill: url(#SVGID_2_);"
+              points="89.156,69.667 89.156,141.334 225.586,113.96 225.586,95.131 		"
+            />
+            <polygon
+              style="fill: #ffffff;"
+              points="253.733,186.322 216.829,186.322 214.609,220.903 253.733,220.903 		"
+            />
+            <polygon
+              style="fill: #f93030;"
+              points="253.733,220.903 214.609,220.903 211.666,266.742 253.733,266.742 		"
+            />
+            <polygon
+              style="fill: #ffffff;"
+              points="253.733,266.742 211.666,266.742 208.642,313.787 253.733,313.787 		"
+            />
+            <polygon
+              style="fill: #f93030;"
+              points="253.733,313.787 208.642,313.787 206.036,354.399 253.733,354.399 		"
+            />
+            <path
+              style="fill: #ffffff;"
+              d="M237.649,371.802c0-3.611,2.935-6.546,6.546-6.546h9.272h0.265v-10.857h-47.697l-2.968,46.241
+			h34.58V371.802z"
+            />
+            <path
+              style="fill: #cecece;"
+              d="M253.733,365.256h9.538c3.611,0,6.546,2.935,6.546,6.546v28.838h31.693l-2.967-46.241h-44.81
+			V365.256z"
+            />
+            <polygon
+              style="fill: #c92b2b;"
+              points="253.733,354.399 298.543,354.399 295.937,313.787 253.733,313.787 		"
+            />
+            <polygon
+              style="fill: #cecece;"
+              points="253.733,313.787 295.937,313.787 292.914,266.742 253.733,266.742 		"
+            />
+            <polygon
+              style="fill: #c92b2b;"
+              points="253.733,266.742 292.914,266.742 289.97,220.903 253.733,220.903 		"
+            />
+            <polygon
+              style="fill: #cecece;"
+              points="253.733,220.903 289.97,220.903 287.751,186.322 253.733,186.322 		"
+            />
+            <polygon
+              style="fill: #fcfcfc;"
+              points="216.853,185.92 216.829,186.322 253.733,186.322 287.751,186.322 287.726,185.92 
+			253.733,185.92 		"
+            />
+            <polygon
+              style="fill: #d1cbcb;"
+              points="269.817,401.043 310.027,401.043 310.027,400.64 301.51,400.64 269.817,400.64 		"
+            />
+            <polygon
+              style="fill: #d1cbcb;"
+              points="237.649,400.64 203.069,400.64 195.027,400.64 195.027,401.043 237.649,401.043 		"
+            />
+            <rect
+              x="217.544"
+              y="132.039"
+              style="fill: #ffffff;"
+              width="33.913"
+              height="22.517"
+            />
+            <rect
+              x="245.691"
+              y="156.969"
+              style="fill: #ffffff;"
+              width="5.766"
+              height="12.867"
+            />
+            <rect
+              x="236.041"
+              y="156.969"
+              style="fill: #ffffff;"
+              width="7.238"
+              height="12.867"
+            />
+            <rect
+              x="226.39"
+              y="156.969"
+              style="fill: #ffffff;"
+              width="7.238"
+              height="12.867"
+            />
+            <rect
+              x="217.544"
+              y="156.969"
+              style="fill: #ffffff;"
+              width="6.434"
+              height="12.867"
+            />
+            <rect
+              x="254.537"
+              y="156.969"
+              style="fill: #cecece;"
+              width="6.434"
+              height="12.867"
+            />
+            <rect
+              x="272.23"
+              y="156.969"
+              style="fill: #cecece;"
+              width="5.629"
+              height="12.867"
+            />
+            <rect
+              x="280.272"
+              y="156.969"
+              style="fill: #cecece;"
+              width="6.434"
+              height="12.867"
+            />
+            <rect
+              x="251.457"
+              y="156.969"
+              style="fill: #cecece;"
+              width="0.667"
+              height="12.867"
+            />
+            <rect
+              x="263.383"
+              y="156.969"
+              style="fill: #cecece;"
+              width="6.434"
+              height="12.867"
+            />
+            <rect
+              x="251.457"
+              y="132.039"
+              style="fill: #cecece;"
+              width="36.052"
+              height="22.517"
+            />
+            <polygon
+              style="fill: #8e8080;"
+              points="253.733,169.836 252.125,169.836 251.457,169.836 245.691,169.836 243.279,169.836 
+			236.041,169.836 233.628,169.836 226.39,169.836 223.978,169.836 217.544,169.836 215.132,169.836 209.502,169.836 
+			207.09,169.836 207.09,185.92 216.853,185.92 253.733,185.92 		"
+            />
+            <path
+              style="fill: #6b6363;"
+              d="M217.544,154.557H207.09v2.413v12.867h2.413v-12.867h5.629v12.867h2.413v-12.867h6.434v12.867
+			h2.413v-12.867h7.238v12.867h2.413v-12.867h7.238v12.867h2.413v-12.867h5.766h0.667v12.867h1.608v16.084h33.993h9.433v-16.084
+			v-12.867v-2.413h-9.65h-36.052H217.544z M289.118,156.969h5.629v12.867h-5.629V156.969z M280.272,156.969h6.434v12.867h-6.434
+			V156.969z M272.23,156.969h5.629v12.867h-5.629V156.969z M263.383,156.969h6.434v12.867h-6.434V156.969z M254.537,156.969h6.434
+			v12.867h-6.434V156.969z"
+            />
+            <polygon
+              style="fill: #ffffff;"
+              points="280.031,86.2 282.402,86.2 251.581,71.724 220.761,86.2 223.132,86.2 223.174,86.2 
+			279.277,86.2 		"
+            />
+            <polygon
+              style="fill: #f4ef40;"
+              points="251.32,91.829 250.446,91.829 225.586,91.829 225.586,95.131 225.586,113.96 
+			225.586,119.172 251.32,119.172 		"
+            />
+            <polygon
+              style="fill: #ffb000;"
+              points="277.055,95.045 277.055,91.829 275.381,91.829 251.32,91.829 251.32,119.172 
+			277.055,119.172 277.055,114.052 		"
+            />
+            <polygon
+              style="fill: #c1c1c1;"
+              points="225.586,119.172 214.328,119.172 214.328,132.039 217.544,132.039 251.457,132.039 
+			287.509,132.039 289.118,132.039 289.118,119.172 277.055,119.172 251.32,119.172 		"
+            />
+            <polygon
+              style="fill: #c1c1c1;"
+              points="251.32,91.829 275.381,91.829 277.055,91.829 279.277,91.829 279.277,86.2 223.174,86.2 
+			223.174,91.829 225.511,91.829 225.586,91.829 250.446,91.829 		"
+            />
+            <path
+              style="fill: #4f4949;"
+              d="M244.195,365.256c-3.611,0-6.546,2.935-6.546,6.546v28.838v0.402h15.819v-35.787H244.195z"
+            />
+            <path
+              style="fill: #333030;"
+              d="M253.468,401.043h0.265h16.084v-0.402v-28.838c0-3.611-2.935-6.546-6.546-6.546h-9.538h-0.265
+			V401.043z"
+            />
+            <polygon
+              style="fill: #8e8080;"
+              points="253.468,401.043 237.649,401.043 195.027,401.043 195.027,418.333 253.733,418.333 
+			253.733,401.043 		"
+            />
+            <polygon
+              style="fill: #6b6363;"
+              points="253.733,401.043 253.733,418.333 310.027,418.333 310.027,401.043 269.817,401.043 		"
+            />
+            <rect
+              id="w1"
+              x="220"
+              y="230"
+              style="fill: #6b6363;"
+              width="10"
+              height="20"
+            />
+            <rect
+              id="w2"
+              x="270"
+              y="260"
+              style="fill: #6b6363;"
+              width="8"
+              height="16"
+            />
+            <rect
+              id="w3"
+              x="260"
+              y="320"
+              style="fill: #6b6363;"
+              width="9"
+              height="18"
+            />
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <div class="lab8_ex3">
+      <svg
+        class="l8_text_svg"
+        width="1000"
+        height="600"
+        style="background: rgb(231, 225, 142);"
+      >
+        <defs>
+          <clippath id="my-path">
+            <text x="420" y="220" font-size="200" font-weight="bold">
+              TEXT
+            </text>
+          </clippath>
+        </defs>
+        <image
+          xlink:href="img/texture.jpeg"
+          clip-path="url(#my-path)"
+          width="100%"
+          height="280%"
+          preserveAspectRatio="none"
+        />
+
+        <g>
+          <image
+            style="overflow: visible; opacity: 0.75;"
+            width="330"
+            height="268"
+            xlink:href="E923F198.png"
+            transform="matrix(1 0 0 1 -47.6667 -30)"
+            x="200"
+            y="305"
+          ></image>
+          <g>
+            <defs>
+              <path
+                fill="yellow"
+                x="500"
+                y="200"
+                class="st0"
+                id="pst0"
+                d="M7.2,44.6C31.7,37.3,26.8-3,53-17.3c21-11.5,51.3-0.3,68.1,16.1c19.3,18.8,15.4,39,29,43.3
+            C171.1,48.7,186.3,3.2,216,5c20.2,1.2,40.4,24,43.5,48.2c3.6,27.5-15.5,49.3-19,53.2c-14.6,16.6-24.5,11.7-32.4,26
+            c-10.7,19.3,4.1,34.5-5.6,55.7c-7.6,16.6-26.2,28.2-43.5,27.2c-28.2-1.6-43.4-35.3-45.8-40.8c-8.3-19.3-1.9-26.5-11.2-43.3
+            c-6.6-12-21.7-29.9-39.1-29.7c-25.6,0.3-31.7,39.5-55.8,39.6c-23.8,0.1-39.5-37.9-40.2-39.6c-8.3-20.6-10.3-51.7,2.2-60.6
+            C-20.1,33.3-9.5,49.6,7.2,44.6z"
+              />
+            </defs>
+            <use xlink:href="#pst0" x="200" y="300" />
+          </g>
+        </g>
+      </svg>
+    </div>
+  </body>
+</html>

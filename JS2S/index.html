@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="input">
+      <h3 align="center">Лабоаторная работа №1</h3>
+      <div id="ex1">
+        <h4>Задание 1</h4>
+        <input type="button" value="Окно оповещения" onclick="fun1()" />
+        <input type="button" value="Окно запроса" onclick="fun3()" />
+        <input
+          type="button"
+          id="test"
+          value="Окно подтверждения"
+          onclick="fun2()"
+        />
+      </div>
+      <hr />
+      <div id="ex2">
+        <h4>Задание 2</h4>
+        <input type="button" value="Сложение строки с числом" onclick="sum()" />
+      </div>
+      <hr />
+      <div id="ex3">
+        <h4>Задание 3</h4>
+        <input type="button" value="Арифметические операции" onclick="mod()" />
+      </div>
+      <hr />
+      <div id="ex4">
+        <h4>Задание 4</h4>
+        <input type="button" value="Операторы сравнения" onclick="findRes()" />
+      </div>
+      <hr />
+      <div id="ex5">
+        <h4>Задание 5</h4>
+        <input
+          type="button"
+          value="Логические конструкции"
+          onclick="comparing()"
+        />
+      </div>
+      <hr />
+      <div id="ex6">
+        <h4>Задание 6</h4>
+        <input
+          type="button"
+          value="Определение дня недели"
+          onclick="outputData()"
+        />
+      </div>
+      <hr />
+      <!-- //////////////////////////////////// -->
+      <h3 align="center">Лабоаторная работа №2</h3>
+      <div id="lab2_ex2">
+        <h4>Задание 2</h4>
+        <input type="button" value="Таблица умножения" onclick="table()" />
+      </div>
+      <hr />
+      <div id="lab2_ex3">
+        <h4>Задание 3</h4>
+        <input
+          type="button"
+          value="Площадь кругу и длина окружноти"
+          onclick="square()"
+        />
+      </div>
+      <hr />
+      <h4 align="center">Задание 4</h4>
+      <div id="lab2_ex4">
+        <table id="table_ex4">
+          <tr>
+            <td>Число</td>
+            <td>Метод</td>
+            <td>Результат</td>
+            <td>Описание метода</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>toExponential(количество)</td>
+            <td></td>
+            <td>представляет число в экспоненциальной форме</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>toFixed(количество)</td>
+            <td></td>
+            <td>
+              представляет число в форме с фиксированным количеством цифр после
+              точки
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>toPrecision(точность)</td>
+            <td></td>
+            <td>
+              представляет число с заданным общим количеством значащих цифр.
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>toString([основание])</td>
+            <td></td>
+            <td>Строковое представление числа в 16-ричной системе счисления</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>toExponential(количество)</td>
+            <td></td>
+            <td>представляет число в экспоненциальной форме.</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>toFixed(количество)</td>
+            <td></td>
+            <td>
+              представляет число в форме с фиксированным количеством цифр после
+              точки.
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>toPrecision(точность)</td>
+            <td></td>
+            <td>
+              представляет число с заданным общим количеством значащих цифр.
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>toString([основание])</td>
+            <td></td>
+            <td>Строковое представление числа в 16-ричной системе счисления</td>
+          </tr>
+        </table>
+      </div>
+      <hr />
+      <!-- //////////////////////////////////// -->
+      <h3 align="center">Лабоаторная работа №3</h3>
+      <div id="lab3_ex1">
+        <h4>Задание 1</h4>
+        <input
+          type="button"
+          value="Определение максимального и минимального"
+          onclick="extremArr()"
+        />
+      </div>
+      <hr />
+      <div id="lab3_ex2">
+        <h4>Задание 2</h4>
+        <input
+          type="button"
+          value="Сделать из одного массива два"
+          onclick="splitArr()"
+        />
+      </div>
+      <hr />
+      <div id="lab3_ex3">
+        <h4>Задание 3</h4>
+        <input type="button" value="Работа со сторками" onclick="convStr()" />
+      </div>
+      <hr />
+      <h4 align="center">Задание 4</h4>
+      <div id="lab3_ex4">
+        <table id="t_ex4">
+          <tr>
+            <td>Год</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Месяц</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>День</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Час</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Минуты</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Секунды</td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <!-- //////////////////////////////////// -->
+      <hr />
+      <h3 align="center">Лабораторная работа №4</h3>
+      <div id="lab4_ex1">
+        <h4>Задание 1</h4>
+        <input type="button" value="Output Gruppa" onclick="outputGruppa()" />
+      </div>
+      <hr />
+      <div id="lab4_ex2">
+        <h4>Задание 2</h4>
+        <input
+          type="button"
+          value="Output Student"
+          onclick="outputStudents()"
+        />
+      </div>
+      <hr />
+      <div id="lab4_ex3">
+        <h4>Задание 3</h4>
+        <input type="button" value="Output ex3" onclick="outputEx3()" />
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

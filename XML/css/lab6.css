@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2pt;
+}
+.wrapper_ex1 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.ex1 {
+  /* background: linear-gradient(#ffcc66, #ff33cc); */
+  background: linear-gradient(#9c33ff, #ffcc66);
+  position: absolute;
+  top: 50%;
+  margin-top: -350px;
+  left: 50%;
+  margin-left: -325px;
+}
+.wrapper_ex2 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.ex2 {
+  /* background: linear-gradient(#ffcc66, #ff33cc); */
+  background: linear-gradient(#2871c4, #66ffbf);
+  position: absolute;
+  top: 50%;
+  margin-top: -325px;
+  left: 50%;
+  margin-left: -325px;
+}
+.wrapper_lab7 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.l7_ex1 {
+  background: linear-gradient(90deg, #993399, #cc3333);
+  position: absolute;
+  top: 50%;
+  margin-top: -400px;
+  left: 50%;
+  margin-left: -475px;
+}
+
+.lab7_ex4_wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.lab7_ex4 {
+  background: linear-gradient(90deg, #131a57, #bb23c0);
+  position: absolute;
+  top: 50%;
+  margin-top: -300px;
+  left: 50%;
+  margin-left: -400px;
+}
+
+.lab8_wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.lab8 {
+  background: linear-gradient(90deg, #a11c0a, #dfc42f);
+  position: absolute;
+  top: 50%;
+  margin-top: -400px;
+  left: 50%;
+  margin-left: -475px;
+}
+
+.lab8_svg_img {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.l8_svg {
+  position: absolute;
+  top: 50%;
+  margin-top: -400px;
+  left: 50%;
+  margin-left: -400px;
+}
+.lab8_ex3 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.l8_text_svg {
+  position: absolute;
+  top: 50%;
+  margin-top: -300px;
+  left: 50%;
+  margin-left: -500px;
+}

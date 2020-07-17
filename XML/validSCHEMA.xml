@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="css/main.css"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="LIST">
+    <xs:complexType>
+            <xs:element name="UNIVERSITY">
+            <xs:complexType>
+                <xs:sequence>
+                <xs:element name="NAME" type="xs:string"/>
+                <xs:element name="SPECIALIZATION" type="xs:string"/>
+                <xs:element name="RATE" type="xs:string"/>
+                <xs:element name="PLAN" type="xs:string"/>
+                <xs:element name="CITY" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            </xs:element>
+    </xs:complexType>
+    </xs:element>
+</xs:schema>
+
+<LIST>
+    <UNIVERSITY>
+        <NAME>БГТУ</NAME>
+        <SPECIALIZATION>ПОИТ</SPECIALIZATION>
+        <RATE>320 баллов</RATE>
+        <PLAN>300 человека</PLAN>
+        <CITY>Минск</CITY>
+    </UNIVERSITY>
+</LIST>

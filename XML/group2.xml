@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WRAPPER>
+    <STUDENT>
+        <NAME>Вася</NAME>
+        <SURNAME>Васильев</SURNAME>
+        <GROUP>Группа № 2</GROUP>
+    </STUDENT>
+    <STUDENT>
+        <NAME>Петя</NAME>
+        <SURNAME>Петров</SURNAME>
+        <GROUP>Группа № 2</GROUP>
+    </STUDENT>
+    <STUDENT>
+        <NAME>Александр</NAME>
+        <SURNAME>Александров</SURNAME>
+        <GROUP>Группа № 2</GROUP>
+    </STUDENT>
+</WRAPPER>

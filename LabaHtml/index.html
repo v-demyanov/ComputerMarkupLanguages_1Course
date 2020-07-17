@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <h1>Я, Демьянов Владислав Русланович изучаю <span>HTML</span> и CSS</h1>
+      </div>
+      <div class="navigation">
+        <ul class="menu">
+          <li><a href="../LabaHtml/index.html">Home</a></li>
+          <li><a href="../LabaHtml/second.html">Second page</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="article">
+      <div class="content1">
+        <h2>Заголовок</h2>
+        <h3 class="f_h">Абзац 1</h3>
+        <p class="f_p">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          <span style=" color: rgb(56, 173, 169)">Animi</span> voluptatibus
+          soluta error delectus omnis quaerat eligendi recusandae enim
+          exercitationem laudantium nam incidunt eos assumenda
+          <span>mollitia</span>, placeat, laboriosam officia quibusdam eveniet!
+        </p>
+        <h3 class="s_h">Абзац 2</h3>
+        <p class="s_p">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+          voluptatibus soluta error delectus omnis quaerat
+          <span>eligendi</span> recusandae enim exercitationem laudantium nam
+          incidunt eos assumenda mollitia, placeat, laboriosam officia quibusdam
+          eveniet!
+        </p>
+        <h3 class="th_h">Абзац 3</h3>
+        <p class="th_p">
+          Lorem ipsum dolor sit amet, consectetur
+          <span id="span">adipisicing</span> elit. Animi voluptatibus soluta
+          error delectus omnis quaerat eligendi recusandae enim exercitationem
+          laudantium nam incidunt eos assumenda mollitia, <span>placeat</span>,
+          laboriosam officia quibusdam eveniet!
+        </p>
+      </div>
+
+      <div class="content2">
+        <h2>Список</h2>
+        <div class="list">
+          <div class="list_f">
+            <ol>
+              <li class="f">
+                Элеменет 1
+                <ul>
+                  <li>Элеменет 1.1</li>
+                  <li>Элеменет 1.2</li>
+                </ul>
+              </li>
+              <li class="f">
+                Элеменет 2
+                <ul>
+                  <li>Элеменет 2.1</li>
+                  <li>Элеменет 2.2</li>
+                </ul>
+              </li>
+              <li class="f">
+                Элеменет 3
+                <ul>
+                  <li>Элеменет 3.1</li>
+                  <li>Элеменет 3.2</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+
+          <div class="list_s">
+            <ol>
+              <li class="f">
+                Элеменет 1
+                <ul>
+                  <li>Элеменет 1.1</li>
+                  <li>Элеменет 1.2</li>
+                </ul>
+              </li>
+              <li class="f">
+                Элеменет 2
+                <ul>
+                  <li>Элеменет 2.1</li>
+                  <li>Элеменет 2.2</li>
+                </ul>
+              </li>
+              <li class="f">
+                Элеменет 3
+                <ul>
+                  <li>Элеменет 3.1</li>
+                  <li>Элеменет 3.2</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="table">
+      <h2>Таблица</h2>
+      <!-- cellspacing="0" -->
+      <table id="table_main" border="1">
+        <tr>
+          <td>ФИО</td>
+          <td colspan="3">Иванов Иван Иванович</td>
+        </tr>
+        <tr>
+          <td><img src="img/ava.jpg" alt="" /></td>
+          <td colspan="3">Адрес: ул.Белорусская, д.5, ком.430</td>
+        </tr>
+        <tr>
+          <td rowspan="6">1 семестр 2016/2017 уч. года</td>
+          <td>Дата</td>
+          <td>Предмет</td>
+          <td>Оценка</td>
+        </tr>
+        <tr>
+          <td>31.12.2016</td>
+          <td>ОАиП</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>5.01.2017</td>
+          <td>Физика</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td>11.01.2017</td>
+          <td>ОИТ</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>16.01.2017</td>
+          <td>Математика</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>22.01.2017</td>
+          <td>АЛОЦВМ</td>
+          <td>8</td>
+        </tr>
+        <tr id="output">
+          <td colspan="4"></td>
+        </tr>
+      </table>
+    </section>
+
+    <footer class="f_footer">
+      <span>©Демьянов</span>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
+<!-- <marquee behavior="scroll" direction="right"> <img src="../images/Chrome.png" /> </marquee> 
+
+<pre></pre>
+
+Выводится с помощью тэга:
+<sup>текст</sup>
+Пример: основной текст надстрочный индекс
+23=8
+
+Подстрочный индекс (Subscript)
+Выводится с помощью тэга:
+<sub>текст</sub>
+
+Источник: http://html.find-info.ru/html/004/text.htm
+
+-->
